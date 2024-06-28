@@ -5,6 +5,7 @@ import { RiGitRepositoryFill, RiUserFollowFill, RiUserFollowLine, RiUserUnfollow
 import { FaXTwitter } from "react-icons/fa6";
 import { TfiThought } from "react-icons/tfi";
 import { formatMemberSince } from "./utils/functions";
+import LikeProfile from "./LikeProfile";
 
 const ProfileInfo = ({ userProfile }) => {
   // const userProfile = {
@@ -33,7 +34,7 @@ const ProfileInfo = ({ userProfile }) => {
           <img src={userProfile?.avatar_url} className="w-20 h-20 rounded-md mb-2"    alt="" />
         </a>
         <div className='flex gap-2 items-center flex-col'>
-						{/* <LikeProfile userProfile={userProfile} /> */}
+						<LikeProfile userProfile={userProfile} />
 						<a
 							href={userProfile?.html_url}
 							target='_blank'

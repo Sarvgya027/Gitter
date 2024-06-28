@@ -16,7 +16,7 @@ function Homepage() {
   const getUserDetails = useCallback(async (username="sarvgya027") => {
     setLoading(true)
     try {
-      const res = await fetch(`http://localhost:5000/api/users/profile/${username}`)
+      const res = await fetch(`/api/users/profile/${username}`)
       const data = await res.json();
       const { repos, userProfile } = data;
       setRepos(repos)
@@ -64,7 +64,7 @@ function Homepage() {
   return (
     <div className=''>
       <Search onSearch={onSearch} />
-      {repos.length > 0 && <SortRepos onSort={onSort} sortType={sortType} />}
+      {Repos.length > 0 && <SortRepos onSort={onSort} sortType={sortType} />}
       <div className='flex gap-4 flex-col lg:flex-row justify-center items-start'>
         {userProfile && !loading && <ProfileInfo userProfile={userProfile} />}
 
