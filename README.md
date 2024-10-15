@@ -3,10 +3,10 @@
 A full-stack application built with MongoDB, React.js, Express.js, and Node.js, designed to fetch and display user data from the GitHub API.
 
 ## Live Demo
-[Live Link](your-live-link-here)
+[Live Link](https://gitter.onrender.com/)
 
 ## GitHub Repository
-[GitHub Repo](your-github-repo-link-here)
+[GitHub Repo](https://github.com/Sarvgya027/Gitter)
 
 ## Tech Stack
 - **MongoDB**: NoSQL database for persistent storage
